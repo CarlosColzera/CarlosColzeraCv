@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer CV</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="card" id="card">
+      <div class="details" id="details">
+        <div class="horizontal_center" type="image" id="imagen"></div>
+        <div
+          class="horizontal_center label1"
+          type="label"
+          id="labeldatos1"
+        ></div>
+        <div
+          class="horizontal_center label2"
+          type="label"
+          id="labeldatos2"
+        ></div>
+      </div>
+
+      <ul class="values_list horizontal_center" id="listavalores">
+        <li onmouseenter="myEnterFunction('apenom')" id="apenom">
+          <i class="fa-solid fa-face-smile fa-2x"></i>
+        </li>
+
+        <li onmouseenter="myEnterFunction('email')" id="email">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+        </li>
+
+        <li onmouseenter="myEnterFunction('ubicacion')" id="ubicacion">
+          <i class="fa-sharp fa-solid fa-map-location-dot fa-2x"></i>
+        </li>
+
+        <li onmouseenter="myEnterFunction('birthday')" id="birthday">
+          <i class="fa-solid fa-cake-candles fa-2x"></i>
+        </li>
+
+        <li onmouseenter="myEnterFunction('phone')" id="phone">
+          <i class="fa-solid fa-phone fa-2x"></i>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="horizontal_center values_list limpiar"
+      id="ocultarbtn"
+      onclick="ocultarbtn()"
+    >
+      Limpiar
+    </div>
+
+    <script src="js/datos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f2062dec3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
